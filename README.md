@@ -1,4 +1,6 @@
 # nextcloud-container
+First you need to download the latest nextcloud package as latest.zip
+https://download.nextcloud.com/server/releases/latest.zip
 
 # To build image
 sudo rm -rf nextcloud_data && mkdir nextcloud_data && sudo chown www-data:www-data nextcloud_data && \
