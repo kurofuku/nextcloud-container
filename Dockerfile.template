@@ -21,7 +21,7 @@ RUN			\
 			apt -y install locales && \
 			sed -i -E 's/# (en_US.UTF-8)/\1/' /etc/locale.gen && \
 			locale-gen && \
-			echo "export LANG=en_US.UTF-8" >> /home/yasu/.bashrc && \
+			echo "export LANG=en_US.UTF-8" >> ${HOME}/.bashrc && \
 			# Setup dotfiles
 			wget -O setup.sh https://raw.githubusercontent.com/kurofuku/dotfiles/master/setup.sh && \
 			bash ./setup.sh raspi && \
